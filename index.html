@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bakso mantapzz</title>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+</head>
+<body style="margin:0; overflow:hidden;">
+  <a-scene
+    mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/card.mind"
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false">
+
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+    <a-entity mindar-image-target="targetIndex: 0">
+
+      <!-- Mangkok bawah -->
+      <a-cylinder position="0 -0.2 0" radius="0.4" height="0.1" color="#E8C17A"></a-cylinder>
+      <a-torus position="0 -0.1 0" radius="0.38" radius-tubular="0.1" arc="180" rotation="-90 0 0" color="#E8C17A"></a-torus>
+
+      <!-- Kuah -->
+      <a-cylinder position="0 -0.08 0" radius="0.3" height="0.04" color="#E8621A"></a-cylinder>
+
+      <!-- Bakso -->
+      <a-sphere position="0.15 0 0" radius="0.08" color="#8B2500"></a-sphere>
+      <a-sphere position="-0.12 0.02 0.1" radius="0.07" color="#8B2500"></a-sphere>
+      <a-sphere position="0 0.02 -0.12" radius="0.07" color="#9B3500"></a-sphere>
+
+      <!-- Mie -->
+      <a-torus position="0.05 0.02 0.05" radius="0.12" radius-tubular="0.025" color="#F5E040" rotation="80 20 0"></a-torus>
+      <a-torus position="-0.06 0.03 -0.04" radius="0.1" radius-tubular="0.02" color="#F5E040" rotation="70 -30 0"></a-torus>
+
+      <!-- Daun bawang -->
+      <a-cylinder position="0.08 0.15 0" radius="0.015" height="0.2" color="#4CAF50" rotation="15 0 10"></a-cylinder>
+      <a-cylinder position="-0.06 0.14 0.06" radius="0.015" height="0.18" color="#4CAF50" rotation="-10 0 -10"></a-cylinder>
+
+      <!-- Uap -->
+      <a-torus position="0 0.5 0" radius="0.08" radius-tubular="0.015" color="#ffffff" opacity="0.5"
+        animation="property: position; from: 0 0.4 0; to: 0 0.8 0; loop: true; dur: 2000"
+        animation__op="property: opacity; from: 0.6; to: 0; loop: true; dur: 2000">
+      </a-torus>
+
+      <!-- Teks -->
+      <a-text value="bakso ala anak grafikom" position="0 0.8 0" align="center" color="#FF6B35" scale="0.8 0.8 0.8"></a-text>
+      <a-text value="bakso mantapzz" position="0 0.6 0" align="center" color="#ffffff" scale="0.5 0.5 0.5"></a-text>
+
+    </a-entity>
+  </a-scene>
+</body>
+</html> 
